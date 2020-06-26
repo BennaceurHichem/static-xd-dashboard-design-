@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 // import ProfileImage from '../../assets/images/profilelg.png'
+import { Icon, InlineIcon } from "@iconify/react";
 
 const Container = styled.div`
     display: flex;
@@ -14,6 +15,7 @@ const ProfileImg = styled.img`
     height: 2rem;
     margin: 0 1rem;
     cursor: pointer;
+    gorder-radius:50%
 `
 
 const MessageIcon = styled.span`
@@ -24,8 +26,8 @@ const MessageIcon = styled.span`
 const Nav = () => {
     return (
         <Container>
-            <MessageIcon className="iconify" data-inline="false" data-icon="mdi-light:email"></MessageIcon>
-            <ProfileImg src={require('../../assets/images/profilelg.png')} />
+            <MessageIcon className="iconify" data-inline="true" data-icon="mdi-light:email"></MessageIcon>
+            <ProfileImg src={require('../../assets/me.png')} />
         </Container>
     )
 }

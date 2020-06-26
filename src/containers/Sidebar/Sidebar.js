@@ -1,7 +1,7 @@
 import React from 'react'
 import Profile from './Profile'
 import styled from 'styled-components'
-
+import ToggleSwitch from './ToggleSwitch'
 const Container = styled.div`
     background-color: ${({ theme }) => theme.secondary};
     position: fixed;
@@ -20,6 +20,8 @@ const Sidebar = () => {
         <Container>
             Sidebar
             <Profile/>
+            <ToggleSwitch />
+
         </Container>
     )
 }
