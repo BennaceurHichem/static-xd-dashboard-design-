@@ -10,6 +10,7 @@ const Container = styled.div`
 const ProfileImage = styled.img`
     height: 5rem;
     margin-left:2rem;
+    border-radius:50%
 `
 const ProfileName = styled.h1`
     font-size: 1rem;
