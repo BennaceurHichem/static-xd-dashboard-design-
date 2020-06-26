@@ -1,16 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import avatar from '../../assets/me.png'
+import Menu from './Menu/Menu'
 
-const Container  = styled.div`
-
-`
-const ProfileImage  = styled.img`
-
+const Container = styled.div`
+    margin-top: 5rem;
 `
 
-const Title  = styled.h1`
-
+const ProfileImage = styled.img`
+    height: 5rem;
+    margin-left:2rem;
+`
+const ProfileName = styled.h1`
+    font-size: 1rem;
+    font-weight: 300;
+    color: ${({ theme }) => theme.textColor};
 `
 
 
@@ -19,8 +23,8 @@ const Profile = () => {
         <Container>
 
         <ProfileImage src={avatar} />
-        <Title>Hichem Bennaceur </Title>
-
+        <ProfileName>Hichem Bennaceur </ProfileName>
+        <Menu />
         </Container>
     )
 }
